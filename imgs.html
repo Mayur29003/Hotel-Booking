@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Hotels & Resorts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Luxury Hotels & Resorts</h1>
+    <div class="gallery">
+        <img src="https://source.unsplash.com/300x200/?luxury,hotel" alt="Luxury Hotel 1">
+        <img src="https://source.unsplash.com/300x200/?resort,beach" alt="Luxury Resort 2">
+        <img src="https://source.unsplash.com/300x200/?hotel,interior" alt="Luxury Hotel 3">
+        <img src="https://source.unsplash.com/300x200/?resort,pool" alt="Luxury Resort 4">
+    </div>
+</body>
+</html>

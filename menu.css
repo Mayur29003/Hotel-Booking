@@ -1,0 +1,115 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container Style */
+.menu-container {
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title Style */
+.menu-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #ff6f61; /* Warm color for elegance */
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-family: 'Georgia', serif;
+}
+
+/* Individual Day Menu */
+.day-menu {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Day Heading */
+.day-menu h2 {
+    font-size: 32px;
+    color: #333;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+/* Hover Effect for Day Menu */
+.day-menu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.day-menu h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 50%;
+    height: 3px;
+    background-color: #ff6f61;
+}
+
+/* Menu Items */
+.day-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.day-menu ul li {
+    font-size: 18px;
+    color: #555;
+    padding: 5px 0;
+    line-height: 1.6;
+    font-weight: 500;
+    border-bottom: 1px solid #eee;
+}
+
+.day-menu ul li:last-child {
+    border-bottom: none;
+}
+
+/* Icons for Menu Items */
+.day-menu ul li:before {
+    content: "🍴 ";  /* Added a fork & knife emoji */
+    color: #ff6f61;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .menu-title {
+        font-size: 36px;
+    }
+
+    .day-menu h2 {
+        font-size: 26px;
+    }
+}
